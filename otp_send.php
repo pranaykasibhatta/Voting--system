@@ -62,7 +62,7 @@
                 $receiver = $email;
                 $subject = "OTP for online voting";
                 $body = "otp is:".$random_otp;
-                $sender = "From:pranaykasibhatla@gmail.com";
+                $sender = "From:19951A05D0@iare.ac.in";
                 if(mail($receiver, $body,$subject, $sender)){
                     $query1="UPDATE otp SET otp='$random_otp' WHERE email='$email'";
                     $re=mysqli_query($conn,$query1);
